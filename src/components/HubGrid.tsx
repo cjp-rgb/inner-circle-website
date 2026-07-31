@@ -20,7 +20,7 @@ export default function HubGrid() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-2 md:gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
           {HUBS.map((hub) => (
             <div
               key={hub.logo}
@@ -34,11 +34,11 @@ export default function HubGrid() {
                 boxShadow: "0 14px 34px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18)",
               }}
             >
-              <div className="w-full h-8 md:h-12 flex items-center justify-center mb-2 md:mb-3">
+              <div className="h-7 md:h-11 flex items-center justify-center mb-2 md:mb-3">
                 <img
                   src={hub.logo}
                   alt=""
-                  className="w-full h-full object-contain"
+                  className="h-full w-auto max-w-none"
                 />
               </div>
               <p className="text-[9px] md:text-sm text-foreground/70 leading-snug">
