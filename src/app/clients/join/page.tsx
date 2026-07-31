@@ -77,22 +77,6 @@ export default function JoinPage() {
             </div>
           ))}
         </div>
-
-        <div className="max-w-2xl mx-auto px-5 mt-10 md:mt-14">
-          <div
-            className="rounded-xl p-4 text-center"
-            style={{ background: "rgba(224,99,90,0.08)", border: "1px solid rgba(224,99,90,0.3)" }}
-          >
-            <p className="text-[11px] md:text-xs text-foreground/70">
-              Trading involves risk of loss. We earn commission from your
-              broker referral — see our{" "}
-              <a href="/legal/risk" className="underline hover:text-gold-bright">
-                Risk Disclaimer
-              </a>{" "}
-              for full detail before opening an account.
-            </p>
-          </div>
-        </div>
       </div>
       <Footer />
     </main>

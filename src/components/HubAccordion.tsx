@@ -94,7 +94,7 @@ export default function HubAccordion() {
                   <img
                     src={hub.logo}
                     alt=""
-                    className="h-6 w-auto opacity-80"
+                    className="h-6 w-auto max-w-none opacity-80"
                     style={{ transform: "rotate(-90deg)" }}
                   />
                 </div>
@@ -102,7 +102,7 @@ export default function HubAccordion() {
 
               {isActive && (
                 <div className="h-full flex flex-col p-8 animate-[fadeIn_0.4s_ease]">
-                  <img src={hub.logo} alt="" className="h-9 w-auto mb-4" />
+                  <img src={hub.logo} alt="" className="h-9 w-auto max-w-none mb-4" />
                   <p className="text-sm text-gold-bright font-semibold mb-6">
                     {hub.tagline}
                   </p>
@@ -120,7 +120,7 @@ export default function HubAccordion() {
                     <img
                       src={hub.phone}
                       alt={hub.slug}
-                      className="relative h-full max-h-[280px] w-auto drop-shadow-[0_20px_45px_rgba(0,0,0,0.65)]"
+                      className="relative h-full max-h-[280px] w-auto max-w-none drop-shadow-[0_20px_45px_rgba(0,0,0,0.65)]"
                     />
                   </div>
 
@@ -155,7 +155,7 @@ export default function HubAccordion() {
               }}
             >
               <div className="flex items-center justify-between px-4 py-3">
-                <img src={hub.logo} alt="" className="h-4 w-auto" />
+                <img src={hub.logo} alt="" className="h-4 w-auto max-w-none" />
                 <span className="text-gold-bright text-lg">
                   {isActive ? "−" : "+"}
                 </span>
@@ -179,7 +179,7 @@ export default function HubAccordion() {
                     <img
                       src={hub.phone}
                       alt={hub.slug}
-                      className="relative h-[180px] w-auto drop-shadow-[0_16px_30px_rgba(0,0,0,0.6)]"
+                      className="relative h-[180px] w-auto max-w-none drop-shadow-[0_16px_30px_rgba(0,0,0,0.6)]"
                     />
                   </div>
                   <p className="text-xs text-foreground/75 leading-relaxed">

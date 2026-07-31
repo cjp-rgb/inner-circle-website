@@ -10,7 +10,7 @@ export default function ResultsPage() {
             "radial-gradient(ellipse 900px 700px at 50% 20%, rgba(58,44,14,0.7) 0%, rgba(20,15,6,0.85) 45%, rgba(0,0,0,1) 78%), linear-gradient(180deg, #050402 0%, #000000 100%)",
         }}
       >
-        <div className="max-w-3xl mx-auto text-center px-5 mb-8">
+        <div className="max-w-3xl mx-auto text-center px-5 mb-14 md:mb-20">
           <a href="/" className="inline-block text-xs text-gold-bright/80 hover:text-gold-bright mb-6 tracking-wide">
             ← Back to The Inner Circle
           </a>
@@ -26,32 +26,76 @@ export default function ResultsPage() {
           </p>
         </div>
 
-        {/* Prominent disclaimer — not a footnote */}
-        <div className="max-w-2xl mx-auto px-5 mb-12 md:mb-16">
+        {/* Trade Hub */}
+        <div className="max-w-4xl mx-auto px-5 mb-10 md:mb-14">
+          <div className="flex items-center gap-2 mb-5 justify-center md:justify-start">
+            <img src="/logos/trade_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none" />
+          </div>
           <div
-            className="rounded-xl p-4 md:p-5 text-center"
+            className="rounded-2xl p-6 md:p-8"
             style={{
-              background: "rgba(224,99,90,0.08)",
-              border: "1px solid rgba(224,99,90,0.35)",
+              background: "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
+              backdropFilter: "blur(20px) saturate(150%)",
+              WebkitBackdropFilter: "blur(20px) saturate(150%)",
+              border: "1px solid rgba(255,255,255,0.14)",
             }}
           >
-            <p className="text-xs md:text-sm text-foreground/90 font-semibold">
-              Past performance is not a reliable indicator of future results.
-            </p>
-            <p className="text-[11px] md:text-xs text-foreground/60 mt-1.5">
-              Trading involves risk of loss. See our full{" "}
-              <a href="/legal/risk" className="underline hover:text-gold-bright">
-                Risk Disclaimer
-              </a>{" "}
-              before acting on anything below.
-            </p>
+            <p className="text-sm font-bold text-foreground mb-0.5">Gold Signals</p>
+            <p className="text-xs text-muted mb-5">XAUUSD calls</p>
+            <div className="grid grid-cols-3 gap-3 text-center">
+              <div>
+                <p className="text-xl md:text-2xl font-bold text-gold-bright">71%</p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-1">Win Rate</p>
+              </div>
+              <div>
+                <p className="text-xl md:text-2xl font-bold text-gold-bright">2.1R</p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-1">Avg RR</p>
+              </div>
+              <div>
+                <p className="text-xl md:text-2xl font-bold text-foreground/70">10-15</p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-1">Per Day</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Forex Hub */}
+        <div className="max-w-4xl mx-auto px-5 mb-14 md:mb-20">
+          <div className="flex items-center gap-2 mb-5 justify-center md:justify-start">
+            <img src="/logos/forex_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none" />
+          </div>
+          <div
+            className="rounded-2xl p-6 md:p-8"
+            style={{
+              background: "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
+              backdropFilter: "blur(20px) saturate(150%)",
+              WebkitBackdropFilter: "blur(20px) saturate(150%)",
+              border: "1px solid rgba(255,255,255,0.14)",
+            }}
+          >
+            <p className="text-sm font-bold text-foreground mb-0.5">Forex Signals</p>
+            <p className="text-xs text-muted mb-5">FX majors &amp; minors</p>
+            <div className="grid grid-cols-3 gap-3 text-center">
+              <div>
+                <p className="text-xl md:text-2xl font-bold text-gold-bright">83%</p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-1">Win Rate</p>
+              </div>
+              <div>
+                <p className="text-xl md:text-2xl font-bold text-gold-bright">2.4R</p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-1">Avg RR</p>
+              </div>
+              <div>
+                <p className="text-xl md:text-2xl font-bold text-foreground/70">7-10</p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-1">Per Week</p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Automated Hub / Gamma */}
-        <div className="max-w-4xl mx-auto px-5 mb-14 md:mb-20">
+        <div className="max-w-4xl mx-auto px-5">
           <div className="flex items-center gap-2 mb-5 justify-center md:justify-start">
-            <img src="/logos/automated_hub.png" alt="" className="h-6 md:h-7 w-auto" />
+            <img src="/logos/automated_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none" />
           </div>
           <div
             className="rounded-2xl p-6 md:p-8"
@@ -97,47 +141,6 @@ export default function ResultsPage() {
             <p className="text-xs text-muted mt-6 text-center">
               $500 minimum engagement · Verified and updated inside the Automated Hub
             </p>
-          </div>
-        </div>
-
-        {/* Signal providers */}
-        <div className="max-w-4xl mx-auto px-5">
-          <div className="flex items-center gap-2 mb-5 justify-center md:justify-start">
-            <img src="/logos/trade_hub.png" alt="" className="h-6 md:h-7 w-auto" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-            {[
-              { name: "Gold Signals", pair: "XAUUSD calls", win: "71%", rr: "2.1R", freq: "10-15/day" },
-              { name: "Forex Signals", pair: "FX majors & minors", win: "83%", rr: "2.4R", freq: "7-10/wk" },
-            ].map((s) => (
-              <div
-                key={s.name}
-                className="rounded-2xl p-5 md:p-6"
-                style={{
-                  background: "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
-                  backdropFilter: "blur(20px) saturate(150%)",
-                  WebkitBackdropFilter: "blur(20px) saturate(150%)",
-                  border: "1px solid rgba(255,255,255,0.14)",
-                }}
-              >
-                <p className="text-sm font-bold text-foreground mb-0.5">{s.name}</p>
-                <p className="text-xs text-muted mb-4">{s.pair}</p>
-                <div className="grid grid-cols-3 gap-2 text-center">
-                  <div>
-                    <p className="text-lg font-bold text-gold-bright">{s.win}</p>
-                    <p className="text-[9px] text-muted uppercase tracking-wide">Win Rate</p>
-                  </div>
-                  <div>
-                    <p className="text-lg font-bold text-gold-bright">{s.rr}</p>
-                    <p className="text-[9px] text-muted uppercase tracking-wide">Avg RR</p>
-                  </div>
-                  <div>
-                    <p className="text-lg font-bold text-foreground/70">{s.freq}</p>
-                    <p className="text-[9px] text-muted uppercase tracking-wide">Signals</p>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 

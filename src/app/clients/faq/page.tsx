@@ -10,7 +10,7 @@ const FAQS = [
   },
   {
     q: "Is this financial advice?",
-    a: "No. We operate as an Introducing Broker, not a regulated financial adviser. Everything we share — signals, education, automated tools — is informational, not a personal recommendation. See our Risk Disclaimer for full detail.",
+    a: "No. We operate as an Introducing Broker, not a regulated financial adviser. Everything we share — signals, education, automated tools — is informational, not a personal recommendation.",
   },
   {
     q: "How much does it cost to join?",
@@ -22,7 +22,7 @@ const FAQS = [
   },
   {
     q: "Can I use my own existing broker account?",
-    a: "No — access to The Inner Circle is tied to opening your account through our referral link, since that's how we're able to run this as an Introducing Broker.",
+    a: "Yes, in most cases — The Inner Circle works across most major brokers, so you likely won't need to switch or open a new account.",
   },
   {
     q: "I'm new to trading — is this for me?",
@@ -30,7 +30,7 @@ const FAQS = [
   },
   {
     q: "Are the results guaranteed?",
-    a: "No. Past performance is not a reliable indicator of future results, and trading carries genuine risk of loss regardless of any track record shown. See our Results page and Risk Disclaimer for the full picture.",
+    a: "No — past performance is not a reliable indicator of future results.",
   },
   {
     q: "What is Trader Console?",
