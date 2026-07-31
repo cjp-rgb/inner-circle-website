@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const LINKS = [
-  { href: "/clients/hubs", label: "Clients" },
+  { href: "/clients", label: "Clients" },
   { href: "/console", label: "Trader Console" },
   { href: "/#fork", label: "Affiliates" },
 ];
