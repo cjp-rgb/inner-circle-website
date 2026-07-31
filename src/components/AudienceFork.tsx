@@ -11,11 +11,11 @@ export default function AudienceFork() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+        <div className="grid grid-cols-2 gap-3 md:gap-6">
           {/* Clients */}
           <a
             href="/clients"
-            className="group relative rounded-2xl p-8 md:p-10 flex flex-col items-start transition-transform hover:-translate-y-1"
+            className="group relative rounded-xl md:rounded-2xl p-4 md:p-10 flex flex-col items-start transition-transform hover:-translate-y-1"
             style={{
               background:
                 "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
@@ -25,17 +25,17 @@ export default function AudienceFork() {
               boxShadow: "0 14px 34px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18)",
             }}
           >
-            <span className="text-xs tracking-[2px] text-gold uppercase font-semibold mb-3">
+            <span className="text-[9px] md:text-xs tracking-[1.5px] md:tracking-[2px] text-gold uppercase font-semibold mb-1.5 md:mb-3">
               For Traders
             </span>
-            <h3 className="text-xl md:text-2xl font-bold text-gold-bright mb-3">
+            <h3 className="text-sm md:text-2xl font-bold text-gold-bright mb-1.5 md:mb-3">
               I&apos;m a Client
             </h3>
-            <p className="text-sm text-foreground/75 leading-relaxed mb-6">
+            <p className="text-[10px] md:text-sm text-foreground/75 leading-relaxed mb-3 md:mb-6">
               Signals, automation, education, and a community built around
               actually trading better — see what&apos;s inside and how to join.
             </p>
-            <span className="mt-auto text-sm font-semibold text-gold-bright group-hover:underline">
+            <span className="mt-auto text-[10px] md:text-sm font-semibold text-gold-bright group-hover:underline">
               Explore the ecosystem →
             </span>
           </a>
@@ -43,7 +43,7 @@ export default function AudienceFork() {
           {/* Affiliates */}
           <a
             href="/affiliates"
-            className="group relative rounded-2xl p-8 md:p-10 flex flex-col items-start transition-transform hover:-translate-y-1"
+            className="group relative rounded-xl md:rounded-2xl p-4 md:p-10 flex flex-col items-start transition-transform hover:-translate-y-1"
             style={{
               background:
                 "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
@@ -53,17 +53,17 @@ export default function AudienceFork() {
               boxShadow: "0 14px 34px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18)",
             }}
           >
-            <span className="text-xs tracking-[2px] text-[#C8D2DB] uppercase font-semibold mb-3">
+            <span className="text-[9px] md:text-xs tracking-[1.5px] md:tracking-[2px] text-[#C8D2DB] uppercase font-semibold mb-1.5 md:mb-3">
               For Partners
             </span>
-            <h3 className="text-xl md:text-2xl font-bold text-[#E4E9ED] mb-3">
+            <h3 className="text-sm md:text-2xl font-bold text-[#E4E9ED] mb-1.5 md:mb-3">
               I&apos;m an Affiliate
             </h3>
-            <p className="text-sm text-foreground/75 leading-relaxed mb-6">
+            <p className="text-[10px] md:text-sm text-foreground/75 leading-relaxed mb-3 md:mb-6">
               Introduce clients, earn on every trade they place, and get the
               tools built specifically to help you grow your own network.
             </p>
-            <span className="mt-auto text-sm font-semibold text-[#E4E9ED] group-hover:underline">
+            <span className="mt-auto text-[10px] md:text-sm font-semibold text-[#E4E9ED] group-hover:underline">
               See the partner program →
             </span>
           </a>
