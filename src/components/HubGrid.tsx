@@ -34,11 +34,13 @@ export default function HubGrid() {
                 boxShadow: "0 14px 34px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18)",
               }}
             >
-              <img
-                src={hub.logo}
-                alt=""
-                className="w-full max-w-[100px] md:max-w-[160px] h-auto mb-2 md:mb-3"
-              />
+              <div className="w-full h-8 md:h-12 flex items-center justify-center mb-2 md:mb-3">
+                <img
+                  src={hub.logo}
+                  alt=""
+                  className="w-full h-full object-contain"
+                />
+              </div>
               <p className="text-[9px] md:text-sm text-foreground/70 leading-snug">
                 {hub.tag}
               </p>
