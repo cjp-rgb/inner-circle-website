@@ -1,10 +1,10 @@
 const HUBS = [
-  { logo: "/logos/trade_hub.png", tag: "Live signals, every session" },
-  { logo: "/logos/vip_hub.png", tag: "Community & direct access" },
-  { logo: "/logos/automated_hub.png", tag: "Hands-off copy-trading" },
-  { logo: "/logos/forex_hub.png", tag: "RR-based, risk-first" },
-  { logo: "/logos/education_hub.png", tag: "Foundations to advanced" },
-  { logo: "/logos/trader_console.png", tag: "Your command center" },
+  { logo: "/logos/trade_hub.png", tag: "4 live signal providers — Alpha Scalper, London Snipes, Swing Syndicate & High RR. Gold and FX calls, every session." },
+  { logo: "/logos/vip_hub.png", tag: "Wins, progress, and direct access to the team. Where the community actually lives, not just another signal feed." },
+  { logo: "/logos/automated_hub.png", tag: "Gamma — a fully automated gold scalping algo. Link your MT4/5, sit back, and let it copy every trade." },
+  { logo: "/logos/forex_hub.png", tag: "RR-based calls, not pip-chasing. Reversal Scout & FX Samurai, backed by real risk management first." },
+  { logo: "/logos/education_hub.png", tag: "Foundations to advanced SMC — structured lessons from Start Here through full Trader Development." },
+  { logo: "/logos/trader_console.png", tag: "Live gold sentiment, economic calendar alerts, and one-tap access to every signal room." },
 ];
 
 export default function HubGrid() {
@@ -34,14 +34,14 @@ export default function HubGrid() {
                 boxShadow: "0 14px 34px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18)",
               }}
             >
-              <div className="h-7 md:h-11 flex items-center justify-center mb-2 md:mb-3">
+              <div className="h-5 md:h-8 flex items-center justify-center mb-2 md:mb-3">
                 <img
                   src={hub.logo}
                   alt=""
                   className="h-full w-auto max-w-none"
                 />
               </div>
-              <p className="text-[9px] md:text-sm text-foreground/70 leading-snug">
+              <p className="hub-tag text-[7.5px] md:text-xs text-foreground/70 leading-[1.4]">
                 {hub.tag}
               </p>
             </div>
