@@ -65,6 +65,11 @@ export default function ConsolePage() {
           <h1 className="text-2xl md:text-4xl font-bold text-gold-bright mb-3">
             Trader Console
           </h1>
+          <p className="text-base md:text-xl font-semibold text-foreground mb-5 max-w-xl mx-auto leading-snug">
+            Most trading communities hand you a Telegram group and call it a
+            platform. We built a real application instead — something almost
+            nobody else in this space has actually done.
+          </p>
           <div key={active} className="animate-[introFade_0.35s_ease]">
             <p className="text-sm md:text-base text-gold-bright/90 font-semibold mb-1.5">
               {intro.headline}
