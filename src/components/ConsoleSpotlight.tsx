@@ -31,15 +31,13 @@ const TABS = [
   },
 ];
 
-function AbstractDevice({ tabKey, tilt }: { tabKey: string; tilt: number }) {
+function AbstractDevice({ tabKey }: { tabKey: string }) {
   return (
     <div
       className="relative mx-auto"
       style={{
         width: "230px",
         height: "470px",
-        transform: `perspective(900px) rotateY(${tilt}deg)`,
-        transition: "transform 0.1s linear",
       }}
     >
       <div
@@ -143,23 +141,32 @@ function AbstractDevice({ tabKey, tilt }: { tabKey: string; tilt: number }) {
 
 export default function ConsoleSpotlight() {
   const [active, setActive] = useState(0);
-  const [tilt, setTilt] = useState(0);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const tiltRef = useRef<HTMLDivElement>(null);
+  const rafRef = useRef<number | null>(null);
   const tab = TABS[active];
 
   useEffect(() => {
     const handleScroll = () => {
-      const section = sectionRef.current;
-      if (!section) return;
-      const rect = section.getBoundingClientRect();
-      const vh = window.innerHeight;
-      const center = rect.top + rect.height / 2;
-      const progress = Math.max(-1, Math.min(1, (vh / 2 - center) / (vh / 2)));
-      setTilt(progress * 14);
+      if (rafRef.current !== null) return;
+      rafRef.current = requestAnimationFrame(() => {
+        rafRef.current = null;
+        const section = sectionRef.current;
+        const el = tiltRef.current;
+        if (!section || !el) return;
+        const rect = section.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const center = rect.top + rect.height / 2;
+        const progress = Math.max(-1, Math.min(1, (vh / 2 - center) / (vh / 2)));
+        el.style.transform = `perspective(900px) rotateY(${progress * 14}deg)`;
+      });
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+    };
   }, []);
 
   return (
@@ -227,7 +234,9 @@ export default function ConsoleSpotlight() {
               }}
             />
             <div key={tab.key} className="relative animate-[consoleFade_0.4s_ease]">
-              <AbstractDevice tabKey={tab.key} tilt={tilt} />
+              <div ref={tiltRef} className="will-change-transform" style={{ transformStyle: "preserve-3d" }}>
+                <AbstractDevice tabKey={tab.key} />
+              </div>
             </div>
           </div>
 
@@ -249,6 +258,12 @@ export default function ConsoleSpotlight() {
                 </li>
               ))}
             </ul>
+            <a
+              href="/console"
+              className="inline-block mt-6 text-sm font-semibold text-gold-bright border border-gold/40 rounded-full px-5 py-2.5 hover:bg-gold/10 transition-colors"
+            >
+              Explore the full app →
+            </a>
           </div>
         </div>
       </div>
