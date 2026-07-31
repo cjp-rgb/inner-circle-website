@@ -3,12 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 
 const PHONES = [
-  { src: "/phones/trade_hub_phone_crop.png", label: "Trade Hub" },
-  { src: "/phones/vip_hub_phone_crop.png", label: "VIP Hub" },
-  { src: "/phones/automated_hub_phone_crop.png", label: "Automated Hub" },
-  { src: "/phones/forex_hub_phone_crop.png", label: "Forex Hub" },
-  { src: "/phones/education_hub_phone_crop.png", label: "Education Hub" },
-  { src: "/phones/trader_console_phone_crop.png", label: "Trader Console" },
+  { src: "/phones/trade_hub_phone_crop.png", label: "Trade Hub", slug: "trade-hub" },
+  { src: "/phones/vip_hub_phone_crop.png", label: "VIP Hub", slug: "vip-hub" },
+  { src: "/phones/automated_hub_phone_crop.png", label: "Automated Hub", slug: "automated-hub" },
+  { src: "/phones/forex_hub_phone_crop.png", label: "Forex Hub", slug: "forex-hub" },
+  { src: "/phones/education_hub_phone_crop.png", label: "Education Hub", slug: "education-hub" },
+  { src: "/phones/trader_console_phone_crop.png", label: "Trader Console", slug: "trader-console" },
 ];
 
 function useViewportSize() {
@@ -37,6 +37,7 @@ export default function Hero() {
   const swipeAreaRef = useRef<HTMLDivElement>(null);
   const phoneRefs = useRef<(HTMLDivElement | null)[]>([]);
   const labelRef = useRef<HTMLParagraphElement>(null);
+  const detailLinkRef = useRef<HTMLAnchorElement>(null);
   const lastIndexRef = useRef(-1);
   const rafRef = useRef<number | null>(null);
   const activeFloatRef = useRef(0);
@@ -76,6 +77,9 @@ export default function Hero() {
     if (nearest !== lastIndexRef.current) {
       lastIndexRef.current = nearest;
       if (labelRef.current) labelRef.current.textContent = PHONES[nearest].label;
+      if (detailLinkRef.current) {
+        detailLinkRef.current.href = `/clients/hubs?hub=${PHONES[nearest].slug}`;
+      }
     }
   };
 
@@ -224,6 +228,11 @@ export default function Hero() {
               }}
               className="absolute will-change-transform"
               style={initialStyle(i, spacing, centerWidth)}
+              onClick={
+                !isMobile
+                  ? () => (window.location.href = `/clients/hubs?hub=${phone.slug}`)
+                  : undefined
+              }
             >
               <img
                 src={phone.src}
@@ -232,7 +241,7 @@ export default function Hero() {
                 className={
                   isMobile
                     ? "w-full pointer-events-none select-none"
-                    : "w-full drop-shadow-[0_20px_45px_rgba(0,0,0,0.65)] pointer-events-none select-none"
+                    : "w-full drop-shadow-[0_20px_45px_rgba(0,0,0,0.65)] select-none cursor-pointer hover:brightness-110 transition-[filter]"
                 }
               />
             </div>
@@ -247,6 +256,13 @@ export default function Hero() {
           >
             Trade Hub
           </p>
+          <a
+            ref={detailLinkRef}
+            href="/clients/hubs?hub=trade-hub"
+            className="inline-block mt-1.5 text-[10px] md:text-xs text-gold/80 hover:text-gold-bright underline underline-offset-2"
+          >
+            View details →
+          </a>
         </div>
 
         {/* Scroll/swipe cue */}

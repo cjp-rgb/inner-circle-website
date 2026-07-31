@@ -1,10 +1,10 @@
 const HUBS = [
-  { logo: "/logos/trade_hub.png", tag: "4 live signal providers — Alpha Scalper, London Snipes, Swing Syndicate & High RR. Gold and FX calls, every session." },
-  { logo: "/logos/vip_hub.png", tag: "Wins, progress, and direct access to the team. Where the community actually lives, not just another signal feed." },
-  { logo: "/logos/automated_hub.png", tag: "Gamma — a fully automated gold scalping algo. Link your MT4/5, sit back, and let it copy every trade." },
-  { logo: "/logos/forex_hub.png", tag: "RR-based calls, not pip-chasing. Reversal Scout & FX Samurai, backed by real risk management first." },
-  { logo: "/logos/education_hub.png", tag: "Foundations to advanced SMC — structured lessons from Start Here through full Trader Development." },
-  { logo: "/logos/trader_console.png", tag: "Live gold sentiment, economic calendar alerts, and one-tap access to every signal room." },
+  { slug: "trade-hub", logo: "/logos/trade_hub.png", tag: "4 live signal providers — Alpha Scalper, London Snipes, Swing Syndicate & High RR. Gold and FX calls, every session." },
+  { slug: "vip-hub", logo: "/logos/vip_hub.png", tag: "Wins, progress, and direct access to the team. Where the community actually lives, not just another signal feed." },
+  { slug: "automated-hub", logo: "/logos/automated_hub.png", tag: "Gamma — a fully automated gold scalping algo. Link your MT4/5, sit back, and let it copy every trade." },
+  { slug: "forex-hub", logo: "/logos/forex_hub.png", tag: "RR-based calls, not pip-chasing. Reversal Scout & FX Samurai, backed by real risk management first." },
+  { slug: "education-hub", logo: "/logos/education_hub.png", tag: "Foundations to advanced SMC — structured lessons from Start Here through full Trader Development." },
+  { slug: "trader-console", logo: "/logos/trader_console.png", tag: "Live gold sentiment, economic calendar alerts, and one-tap access to every signal room." },
 ];
 
 export default function HubGrid() {
@@ -22,9 +22,10 @@ export default function HubGrid() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
           {HUBS.map((hub) => (
-            <div
-              key={hub.logo}
-              className="relative rounded-xl md:rounded-2xl p-3 md:p-6 flex flex-col items-center text-center"
+            <a
+              key={hub.slug}
+              href={`/clients/hubs?hub=${hub.slug}`}
+              className="relative rounded-xl md:rounded-2xl p-3 md:p-6 flex flex-col items-center text-center transition-transform hover:-translate-y-0.5"
               style={{
                 background:
                   "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
@@ -44,7 +45,7 @@ export default function HubGrid() {
               <p className="hub-tag text-[7.5px] md:text-xs text-foreground/70 leading-[1.4]">
                 {hub.tag}
               </p>
-            </div>
+            </a>
           ))}
         </div>
 
