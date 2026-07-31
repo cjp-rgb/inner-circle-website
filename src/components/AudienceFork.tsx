@@ -1,0 +1,74 @@
+export default function AudienceFork() {
+  return (
+    <section className="relative py-20 md:py-28 px-5 md:px-10">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
+          <p className="text-xs md:text-sm tracking-[3px] text-gold uppercase font-semibold mb-3">
+            Which brings you here
+          </p>
+          <h2 className="text-2xl md:text-4xl font-bold text-gold-bright">
+            Two Ways In
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+          {/* Clients */}
+          <a
+            href="/clients"
+            className="group relative rounded-2xl p-8 md:p-10 flex flex-col items-start transition-transform hover:-translate-y-1"
+            style={{
+              background:
+                "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
+              backdropFilter: "blur(20px) saturate(150%)",
+              WebkitBackdropFilter: "blur(20px) saturate(150%)",
+              border: "1px solid rgba(212,175,55,0.3)",
+              boxShadow: "0 14px 34px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18)",
+            }}
+          >
+            <span className="text-xs tracking-[2px] text-gold uppercase font-semibold mb-3">
+              For Traders
+            </span>
+            <h3 className="text-xl md:text-2xl font-bold text-gold-bright mb-3">
+              I&apos;m a Client
+            </h3>
+            <p className="text-sm text-foreground/75 leading-relaxed mb-6">
+              Signals, automation, education, and a community built around
+              actually trading better — see what&apos;s inside and how to join.
+            </p>
+            <span className="mt-auto text-sm font-semibold text-gold-bright group-hover:underline">
+              Explore the ecosystem →
+            </span>
+          </a>
+
+          {/* Affiliates */}
+          <a
+            href="/affiliates"
+            className="group relative rounded-2xl p-8 md:p-10 flex flex-col items-start transition-transform hover:-translate-y-1"
+            style={{
+              background:
+                "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
+              backdropFilter: "blur(20px) saturate(150%)",
+              WebkitBackdropFilter: "blur(20px) saturate(150%)",
+              border: "1px solid rgba(180,190,200,0.28)",
+              boxShadow: "0 14px 34px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18)",
+            }}
+          >
+            <span className="text-xs tracking-[2px] text-[#C8D2DB] uppercase font-semibold mb-3">
+              For Partners
+            </span>
+            <h3 className="text-xl md:text-2xl font-bold text-[#E4E9ED] mb-3">
+              I&apos;m an Affiliate
+            </h3>
+            <p className="text-sm text-foreground/75 leading-relaxed mb-6">
+              Introduce clients, earn on every trade they place, and get the
+              tools built specifically to help you grow your own network.
+            </p>
+            <span className="mt-auto text-sm font-semibold text-[#E4E9ED] group-hover:underline">
+              See the partner program →
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
