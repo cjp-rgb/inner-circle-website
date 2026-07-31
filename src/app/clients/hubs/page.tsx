@@ -1,7 +1,21 @@
-import HubAccordion from "@/components/HubAccordion";
+"use client";
+
+import { useState, useEffect } from "react";
+import HubAccordion, { HUBS } from "@/components/HubAccordion";
 import Footer from "@/components/Footer";
 
 export default function HubsPage() {
+  const [deepLinked, setDeepLinked] = useState<number | null>(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const hub = params.get("hub");
+    if (hub) {
+      const idx = HUBS.findIndex((h) => h.slug === hub);
+      if (idx !== -1) setDeepLinked(idx);
+    }
+  }, []);
+
   return (
     <main className="bg-background min-h-screen">
       <div
@@ -25,7 +39,9 @@ export default function HubsPage() {
             Six Hubs. One Edge.
           </h1>
           <p className="text-sm text-foreground/70">
-            Select a hub to see what&apos;s actually inside.
+            {deepLinked !== null
+              ? `Starting with ${HUBS[deepLinked].tagline}`
+              : "Select a hub to see what's actually inside."}
           </p>
         </div>
 
