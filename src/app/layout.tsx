@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Nav from "@/components/Nav";
 import "./globals.css";
 
 const poppins = localFont({
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <Nav />
         {children}
       </body>
     </html>
