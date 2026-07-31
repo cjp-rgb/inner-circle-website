@@ -1,6 +1,6 @@
 export default function AudienceFork() {
   return (
-    <section className="relative py-20 md:py-28 px-5 md:px-10">
+    <section id="fork" className="relative py-20 md:py-28 px-5 md:px-10">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12 md:mb-16">
           <p className="text-xs md:text-sm tracking-[3px] text-gold uppercase font-semibold mb-3">
