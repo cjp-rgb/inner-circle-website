@@ -23,7 +23,7 @@ export const HUBS = [
     slug: "automated-hub",
     logo: "/logos/automated_hub.png",
     phone: "/phones/automated_hub_phone_crop.png",
-    tagline: "Gamma — a fully automated gold scalping algo.",
+    tagline: "Gamma — a fully automated gold breakout algo.",
     detail:
       "Link your MT4/5 account and let Gamma work. A hands-off, fully automated approach to trading gold, with a verified track record kept transparent from day one.",
   },

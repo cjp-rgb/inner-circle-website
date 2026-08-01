@@ -147,7 +147,7 @@ export function Screen({ tabKey }: { tabKey: string }) {
             <div className="w-7 h-7 rounded-lg" style={{ background: "linear-gradient(155deg,#F0D687,#C9A84C)" }} />
             <div>
               <p className="text-[10px] text-foreground font-semibold">Gamma</p>
-              <p className="text-[7px] text-muted">Gold scalping algo</p>
+              <p className="text-[7px] text-muted">Gold breakout algo</p>
             </div>
             <span className="ml-auto text-[7px] px-1.5 py-0.5 rounded-full" style={{ background: "rgba(95,217,138,0.2)", color: "#5FD98A" }}>● LIVE</span>
           </div>

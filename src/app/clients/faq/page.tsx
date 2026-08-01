@@ -14,11 +14,11 @@ const FAQS = [
   },
   {
     q: "How much does it cost to join?",
-    a: "There's no separate membership fee. You open a trading account through our broker referral (PU Prime), and access to the community, signals, and Trader Console comes with that.",
+    a: "It's free. There's no membership fee to join The Inner Circle.",
   },
   {
     q: "Is there a minimum to get started?",
-    a: "It depends what you're using — the Automated Hub (Gamma) has a $500 minimum engagement. Signal access and community membership don't require a specific account size.",
+    a: "£250 to get started.",
   },
   {
     q: "Can I use my own existing broker account?",
@@ -33,8 +33,8 @@ const FAQS = [
     a: "No — past performance is not a reliable indicator of future results.",
   },
   {
-    q: "What is Trader Console?",
-    a: "Our own companion app — live market sentiment, automated trading access, signal rooms, and daily tools, all in one place. It's included as part of being a client.",
+    q: "What is the Trader Console?",
+    a: "Our own companion app, built entirely in-house. On the Home tab, check in daily to build a streak, send in your Profitshots for a shot at the monthly prize, and use the built-in lot size calculator. The Insights tab gives you live gold sentiment across every timeframe plus alerts before high-impact news hits. Signals brings every signal room into one place with real results shown honestly. Auto connects you straight to Gamma with the full verified track record. And Scanners flags live setups — structure breaks, fair value gaps, order blocks — the moment they form. It's all included as part of being a client, at no extra cost."
   },
 ];
 

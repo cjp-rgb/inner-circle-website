@@ -1,7 +1,7 @@
 const HUBS = [
   { slug: "trade-hub", logo: "/logos/trade_hub.png", tag: "4 live signal providers — Alpha Scalper, London Snipes, Swing Syndicate & High RR. Gold and FX calls, every session." },
   { slug: "vip-hub", logo: "/logos/vip_hub.png", tag: "Wins, progress, and direct access to the team. Where the community actually lives, not just another signal feed." },
-  { slug: "automated-hub", logo: "/logos/automated_hub.png", tag: "Gamma — a fully automated gold scalping algo. Link your MT4/5, sit back, and let it copy every trade." },
+  { slug: "automated-hub", logo: "/logos/automated_hub.png", tag: "Gamma — a fully automated gold breakout algo. Link your MT4/5, sit back, and let it copy every trade." },
   { slug: "forex-hub", logo: "/logos/forex_hub.png", tag: "RR-based calls, not pip-chasing. Reversal Scout & FX Samurai, backed by real risk management first." },
   { slug: "education-hub", logo: "/logos/education_hub.png", tag: "Foundations to advanced SMC — structured lessons from Start Here through full Trader Development." },
   { slug: "trader-console", logo: "/logos/trader_console.png", tag: "Live gold sentiment, economic calendar alerts, and one-tap access to every signal room." },

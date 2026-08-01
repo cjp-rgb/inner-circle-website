@@ -111,7 +111,7 @@ export default function ResultsPage() {
             <div>
               <img src="/logos/automated_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none mb-4" />
               <p className="text-sm text-foreground/70 leading-relaxed">
-                Gamma — a fully automated gold scalping algo. Link your
+                Gamma — a fully automated gold breakout algo. Link your
                 MT4/5, sit back, and let it copy every trade. $500 minimum
                 engagement.
               </p>
