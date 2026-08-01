@@ -90,18 +90,25 @@ export default function AffiliatesPage() {
               <h3 className="text-lg md:text-2xl font-bold text-[#E8EDF2] mb-4">
                 I&apos;m Looking to Scale
               </h3>
-              <ul className="space-y-3 text-sm text-foreground/65 mb-8 flex-1">
+              <ul className="space-y-3 text-sm text-foreground/65 mb-6 flex-1">
                 <li>Rates that grow with you — no ceiling</li>
+                <li>Weekly training calls with the team</li>
                 <li>Team meetups, not just a group chat</li>
                 <li>AOS handles your content &amp; captions automatically</li>
                 <li>Regular competitions on top of your rate</li>
-                <li>Built for the long run, not a quick payout</li>
               </ul>
+              <div
+                className="rounded-lg p-3.5 mb-6 text-xs text-foreground/70 leading-relaxed"
+                style={{ background: "rgba(200,210,219,0.06)", border: "1px solid rgba(200,210,219,0.15)" }}
+              >
+                <span className="text-[#E8EDF2] font-semibold">This is built for the long run.</span>{" "}
+                We're not optimizing for a quick payout — the rates, the tools, the training, all of it is designed so this is still worth doing in three years, not three months.
+              </div>
               <a
                 href="https://t.me/TIConboardingbot"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center text-sm font-semibold tracking-wide rounded-full px-5 py-3"
+                className="mt-auto text-center text-sm font-semibold tracking-wide rounded-full px-5 py-3"
                 style={{ color: "#0A0A0A", background: "linear-gradient(120deg,#8A94A6,#E8EDF2 45%,#C8D2DB)" }}
               >
                 Apply as an Affiliate →
@@ -114,11 +121,17 @@ export default function AffiliatesPage() {
               <h3 className="text-lg md:text-2xl font-bold text-[#E8EDF2] mb-4">
                 I&apos;m Looking to Scale a Community
               </h3>
-              <p className="text-sm text-foreground/65 mb-5 leading-relaxed">
-                Already running your own community? Bring it onto the
-                Affiliate Operating System and run it as your own — under
-                your name, on our infrastructure.
+              <p className="text-sm text-foreground/65 mb-4 leading-relaxed">
+                Already running your own community? The entire ecosystem
+                goes white label, under your name:
               </p>
+              <ul className="space-y-2 text-sm text-foreground/65 mb-5">
+                <li>Signals</li>
+                <li>Education</li>
+                <li>Copiers</li>
+                <li>Tools &amp; resources</li>
+                <li>The Trader Console mini app</li>
+              </ul>
               <div className="mb-5">
                 <p className="shimmer-text text-3xl font-bold leading-none">Up to $28<span className="text-base">/lot</span></p>
                 <p className="text-[10px] text-muted uppercase tracking-wide mt-1">Our highest available rate</p>
