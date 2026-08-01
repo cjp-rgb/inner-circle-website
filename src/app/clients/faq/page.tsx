@@ -18,7 +18,7 @@ const FAQS = [
   },
   {
     q: "Is there a minimum to get started?",
-    a: "£250 to get started.",
+    a: "£250 — that's the minimum to open and fund your trading account through our onboarding bot. There's no separate membership cost on top of that; once your account's funded, you have full access to every hub, the community, and Trader Console.",
   },
   {
     q: "Can I use my own existing broker account?",

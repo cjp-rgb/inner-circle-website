@@ -115,14 +115,6 @@ export default function ResultsPage() {
                 account live since December 2024, tracked publicly and
                 updated daily.
               </p>
-              <a
-                href="https://www.myfxbook.com/members/SyndicateGlobal/gamma-t-5/12043333"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-bright hover:text-gold underline underline-offset-2"
-              >
-                View Live on MyFxBook →
-              </a>
             </div>
             <div className="flex items-center justify-center gap-8 md:gap-10">
               <AnimatedStat value={160} suffix="%" label="Total Gain" color="#5FD98A" size={140} />
