@@ -109,11 +109,10 @@ export default function ResultsPage() {
             }}
           >
             <div>
-              <img src="/logos/automated_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none mb-4" />
+              <img src="/logos/automated_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none self-start mb-4" />
               <p className="text-sm text-foreground/70 leading-relaxed mb-3">
                 Gamma — a fully automated gold breakout algo, trading a real
-                GBP account live since December 2024. 389 trades taken, on a
-                real account with Vantage Markets, tracked publicly and
+                account live since December 2024, tracked publicly and
                 updated daily.
               </p>
               <a
@@ -125,17 +124,11 @@ export default function ResultsPage() {
                 View Live on MyFxBook →
               </a>
             </div>
-            <div className="flex items-center justify-center gap-6 md:gap-8">
-              <AnimatedStat value={160} suffix="%" label="Total Gain" color="#5FD98A" size={130} />
-              <div className="flex flex-col gap-4">
-                <div>
-                  <p className="text-lg font-bold text-gold-bright">64%</p>
-                  <p className="text-[9px] text-muted uppercase tracking-wide">Win Rate</p>
-                </div>
-                <div>
-                  <p className="text-lg font-bold" style={{ color: "#E0635A" }}>14.79%</p>
-                  <p className="text-[9px] text-muted uppercase tracking-wide">Drawdown</p>
-                </div>
+            <div className="flex items-center justify-center gap-8 md:gap-10">
+              <AnimatedStat value={160} suffix="%" label="Total Gain" color="#5FD98A" size={140} />
+              <div>
+                <p className="text-lg font-bold" style={{ color: "#E0635A" }}>14.79%</p>
+                <p className="text-[9px] text-muted uppercase tracking-wide">Drawdown</p>
               </div>
             </div>
           </div>

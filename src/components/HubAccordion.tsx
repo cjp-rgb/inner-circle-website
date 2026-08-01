@@ -102,7 +102,7 @@ export default function HubAccordion() {
 
               {isActive && (
                 <div className="h-full flex flex-col p-8 animate-[fadeIn_0.4s_ease]">
-                  <img src={hub.logo} alt="" className="h-9 w-auto max-w-none mb-4" />
+                  <img src={hub.logo} alt="" className="h-9 w-auto max-w-none self-start mb-4" />
                   <p className="text-sm text-gold-bright font-semibold mb-6">
                     {hub.tagline}
                   </p>

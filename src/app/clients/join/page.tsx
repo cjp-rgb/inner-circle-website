@@ -1,26 +1,5 @@
 import Footer from "@/components/Footer";
 
-const STEPS = [
-  {
-    n: "01",
-    title: "Open Your Account",
-    copy: "Open a trading account through our partner broker, PU Prime, using our referral link. This is what connects you to The Inner Circle as an introduced client.",
-    cta: { label: "Open Account via PU Prime", href: "https://puvip.co/la-partners/Cjp100" },
-    note: "Referral code CJP100",
-  },
-  {
-    n: "02",
-    title: "Fund & Verify",
-    copy: "Complete your broker's verification and fund your account. Once verified under our referral, you're recognised as part of The Inner Circle.",
-  },
-  {
-    n: "03",
-    title: "Get Your Invite",
-    copy: "You'll receive access to the Telegram community and the Trader Console — Trade Hub, VIP Hub, Automated Hub, Forex Hub, Education Hub, all in one place.",
-    cta: { label: "Explore The Hubs", href: "/clients/hubs" },
-  },
-];
-
 export default function JoinPage() {
   return (
     <main className="bg-background min-h-screen">
@@ -31,51 +10,48 @@ export default function JoinPage() {
             "radial-gradient(ellipse 900px 700px at 50% 20%, rgba(58,44,14,0.7) 0%, rgba(20,15,6,0.85) 45%, rgba(0,0,0,1) 78%), linear-gradient(180deg, #050402 0%, #000000 100%)",
         }}
       >
-        <div className="max-w-3xl mx-auto text-center px-5 mb-12 md:mb-16">
+        <div className="max-w-2xl mx-auto text-center px-5">
           <a href="/" className="inline-block text-xs text-gold-bright/80 hover:text-gold-bright mb-6 tracking-wide">
             ← Back to The Inner Circle
           </a>
           <p className="text-xs md:text-sm tracking-[3px] text-gold uppercase font-semibold mb-3">
             How To Join
           </p>
-          <h1 className="text-2xl md:text-4xl font-bold text-gold-bright mb-3">
-            Three Steps In
+          <h1 className="text-2xl md:text-4xl font-bold text-gold-bright mb-4">
+            One Message In
           </h1>
-          <p className="text-sm text-foreground/70 max-w-lg mx-auto">
-            No application, no waiting list — open an account through our
-            referral and you&apos;re in.
+          <p className="text-sm md:text-base text-foreground/70 max-w-md mx-auto mb-10">
+            Message our onboarding bot on Telegram — it walks you through
+            account setup, verifies you, and sends your invite the moment
+            you're in.
           </p>
-        </div>
 
-        <div className="max-w-2xl mx-auto px-5 space-y-4 md:space-y-5">
-          {STEPS.map((s) => (
-            <div
-              key={s.n}
-              className="rounded-2xl p-6 md:p-8 flex gap-5"
-              style={{
-                background: "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
-                backdropFilter: "blur(20px) saturate(150%)",
-                WebkitBackdropFilter: "blur(20px) saturate(150%)",
-                border: "1px solid rgba(255,255,255,0.14)",
-              }}
-            >
-              <span className="text-2xl md:text-3xl font-bold text-gold/40 flex-shrink-0">{s.n}</span>
-              <div className="flex-1">
-                <h3 className="text-base md:text-lg font-bold text-gold-bright mb-2">{s.title}</h3>
-                <p className="text-sm text-foreground/70 leading-relaxed mb-4">{s.copy}</p>
-                {s.cta && (
-                  <a
-                    href={s.cta.href}
-                    className="inline-block text-xs font-semibold tracking-wide rounded-full px-4 py-2.5"
-                    style={{ color: "#0A0A0A", background: "linear-gradient(155deg,#F0D687,#C9A84C)" }}
-                  >
-                    {s.cta.label}
-                  </a>
-                )}
-                {s.note && <p className="text-[11px] text-muted mt-2">{s.note}</p>}
-              </div>
-            </div>
-          ))}
+          <a
+            href="https://t.me/TIConboardingbot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-base font-semibold tracking-wide rounded-full px-8 py-4"
+            style={{ color: "#0A0A0A", background: "linear-gradient(155deg,#F0D687,#C9A84C)" }}
+          >
+            Message @TIConboardingbot →
+          </a>
+
+          <div
+            className="mt-14 rounded-2xl p-6 md:p-8 text-left"
+            style={{
+              background: "linear-gradient(155deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.025) 55%, rgba(255,255,255,0.015) 100%)",
+              backdropFilter: "blur(20px) saturate(150%)",
+              WebkitBackdropFilter: "blur(20px) saturate(150%)",
+              border: "1px solid rgba(255,255,255,0.14)",
+            }}
+          >
+            <p className="text-xs text-gold uppercase tracking-wide font-semibold mb-4">What happens next</p>
+            <ul className="space-y-3 text-sm text-foreground/75">
+              <li className="flex gap-3"><span className="text-gold-bright font-bold">1</span> Tap the button above to open Telegram and start the bot</li>
+              <li className="flex gap-3"><span className="text-gold-bright font-bold">2</span> Set up a new trading account, or transfer an existing one</li>
+              <li className="flex gap-3"><span className="text-gold-bright font-bold">3</span> Your invite is sent automatically once you're verified</li>
+            </ul>
+          </div>
         </div>
       </div>
       <Footer />
