@@ -110,22 +110,31 @@ export default function ResultsPage() {
           >
             <div>
               <img src="/logos/automated_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none mb-4" />
-              <p className="text-sm text-foreground/70 leading-relaxed">
-                Gamma — a fully automated gold breakout algo. Link your
-                MT4/5, sit back, and let it copy every trade. $500 minimum
-                engagement.
+              <p className="text-sm text-foreground/70 leading-relaxed mb-3">
+                Gamma — a fully automated gold breakout algo, trading a real
+                GBP account live since December 2024. 389 trades taken, on a
+                real account with Vantage Markets, tracked publicly and
+                updated daily.
               </p>
+              <a
+                href="https://www.myfxbook.com/members/SyndicateGlobal/gamma-t-5/12043333"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-bright hover:text-gold underline underline-offset-2"
+              >
+                View Live on MyFxBook →
+              </a>
             </div>
             <div className="flex items-center justify-center gap-6 md:gap-8">
-              <AnimatedStat value={136} suffix="%" label="Total Return" color="#5FD98A" size={130} />
+              <AnimatedStat value={160} suffix="%" label="Total Gain" color="#5FD98A" size={130} />
               <div className="flex flex-col gap-4">
                 <div>
-                  <p className="text-lg font-bold text-gold-bright">81%</p>
+                  <p className="text-lg font-bold text-gold-bright">64%</p>
                   <p className="text-[9px] text-muted uppercase tracking-wide">Win Rate</p>
                 </div>
                 <div>
-                  <p className="text-lg font-bold" style={{ color: "#E0635A" }}>13.41%</p>
-                  <p className="text-[9px] text-muted uppercase tracking-wide">Max DD</p>
+                  <p className="text-lg font-bold" style={{ color: "#E0635A" }}>14.79%</p>
+                  <p className="text-[9px] text-muted uppercase tracking-wide">Drawdown</p>
                 </div>
               </div>
             </div>
