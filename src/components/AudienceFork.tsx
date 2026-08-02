@@ -36,7 +36,7 @@ export default function AudienceFork() {
               actually trading better — see what&apos;s inside and how to join.
             </p>
             <span className="mt-auto text-[10px] md:text-sm font-semibold text-gold-bright group-hover:underline">
-              Explore the ecosystem →
+              See What's Inside →
             </span>
           </a>
 
@@ -64,7 +64,7 @@ export default function AudienceFork() {
               tools built specifically to help you grow your own network.
             </p>
             <span className="mt-auto text-[10px] md:text-sm font-semibold text-[#E4E9ED] group-hover:underline">
-              See the partner program →
+              See Your Earning Potential →
             </span>
           </a>
         </div>

@@ -54,7 +54,7 @@ export default function HubGrid() {
             href="/clients/hubs"
             className="inline-block text-xs md:text-sm font-semibold tracking-wide text-gold-bright border border-gold/40 rounded-full px-5 py-2.5 md:px-6 md:py-3 hover:bg-gold/10 transition-colors"
           >
-            See every hub in detail →
+            Compare All 6 Hubs →
           </a>
         </div>
       </div>
