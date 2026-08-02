@@ -58,7 +58,7 @@ export default function JoinPage() {
             <p className="text-xs text-gold uppercase tracking-wide font-semibold mb-4">What happens next</p>
             <ul className="space-y-3 text-sm text-foreground/75">
               <li className="flex gap-3"><span className="text-gold-bright font-bold">1</span> Tap the button above to open Telegram and start the bot</li>
-              <li className="flex gap-3"><span className="text-gold-bright font-bold">2</span> Set up a new trading account, or transfer an existing one</li>
+              <li className="flex gap-3"><span className="text-gold-bright font-bold">2</span> New account: name, email, phone, quick KYC, and your deposit. Transferring an existing account takes up to 24 hours.</li>
               <li className="flex gap-3"><span className="text-gold-bright font-bold">3</span> Your invite is sent automatically once you're verified</li>
             </ul>
           </div>
