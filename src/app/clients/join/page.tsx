@@ -42,6 +42,9 @@ export default function JoinPage() {
           >
             Message @TIConboardingbot →
           </a>
+          <p className="mt-3 text-xs text-muted">
+            Takes about 2 minutes · Official The Inner Circle bot
+          </p>
 
           <div
             className="mt-14 rounded-2xl p-6 md:p-8 text-left"
