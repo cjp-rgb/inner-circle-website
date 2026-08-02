@@ -17,7 +17,7 @@ export const HUBS = [
     phone: "/phones/vip_hub_phone_crop.png",
     tagline: "Wins, progress, and direct access to the team.",
     detail:
-      "Not another signal feed — a room built around the people in it. General chat, wins & progress, direct announcements from the team, and the standards that keep it worth being in.",
+      "A real community room — general chat, wins & progress, direct announcements from the team, and the standards that keep it worth being in.",
   },
   {
     slug: "automated-hub",
