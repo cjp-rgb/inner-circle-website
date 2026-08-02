@@ -12,7 +12,7 @@ export default function ResultsPage() {
   return (
     <main className="bg-background min-h-screen">
       <div
-        className="relative pt-16 md:pt-24 pb-16 md:pb-20"
+        className="relative pt-16 md:pt-24 pb-16 md:pb-24"
         style={{
           background:
             "radial-gradient(ellipse 900px 700px at 50% 20%, rgba(58,44,14,0.7) 0%, rgba(20,15,6,0.85) 45%, rgba(0,0,0,1) 78%), linear-gradient(180deg, #050402 0%, #000000 100%)",

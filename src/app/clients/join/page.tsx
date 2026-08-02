@@ -17,7 +17,7 @@ export default function JoinPage() {
             "radial-gradient(ellipse 900px 700px at 50% 20%, rgba(58,44,14,0.7) 0%, rgba(20,15,6,0.85) 45%, rgba(0,0,0,1) 78%), linear-gradient(180deg, #050402 0%, #000000 100%)",
         }}
       >
-        <div className="max-w-2xl mx-auto text-center px-5">
+        <div className="max-w-3xl mx-auto text-center px-5">
           <a href="/" className="inline-block text-xs text-gold-bright/80 hover:text-gold-bright mb-6 tracking-wide">
             ← Back to The Inner Circle
           </a>
