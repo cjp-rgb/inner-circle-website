@@ -27,17 +27,25 @@ export default function AffiliatesPage() {
           <a href="/" className="inline-block text-xs text-[#C8D2DB]/70 hover:text-[#E8EDF2] mb-8 tracking-wide">
             ← Back to The Inner Circle
           </a>
-          <div className="flex items-center justify-center gap-3 mb-5">
+          <div className="flex items-center justify-center gap-3 mb-5 word-rise" style={{ animationDelay: "0s" }}>
             <span className="w-8 h-px" style={{ background: "linear-gradient(90deg, transparent, #C8D2DB)" }} />
             <span className="text-[10px] md:text-xs tracking-[3px] uppercase font-bold text-[#C8D2DB]">
               For Partners
             </span>
             <span className="w-8 h-px" style={{ background: "linear-gradient(90deg, #C8D2DB, transparent)" }} />
           </div>
-          <h1 className="shimmer-text text-3xl md:text-5xl font-bold mb-4 leading-tight">
-            Grow With The Inner Circle
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 leading-tight whitespace-nowrap">
+            {"Grow With The Inner Circle".split(" ").map((word, i) => (
+              <span
+                key={word + i}
+                className="inline-block word-rise"
+                style={{ animationDelay: `${0.12 + i * 0.07}s`, marginRight: "0.28em" }}
+              >
+                <span className="shimmer-text inline-block">{word}</span>
+              </span>
+            ))}
           </h1>
-          <p className="text-sm md:text-base text-foreground/60 max-w-lg mx-auto">
+          <p className="text-sm md:text-base text-foreground/60 max-w-lg mx-auto word-rise" style={{ animationDelay: "0.65s" }}>
             Real tools, real infrastructure, real support — not just a
             referral link and good luck.
           </p>
@@ -182,6 +190,14 @@ export default function AffiliatesPage() {
         }
         @keyframes introFade {
           from { opacity: 0; transform: translateY(4px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .word-rise {
+          opacity: 0;
+          animation: wordRise 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
+        }
+        @keyframes wordRise {
+          from { opacity: 0; transform: translateY(22px); }
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
