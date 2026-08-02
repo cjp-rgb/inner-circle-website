@@ -46,7 +46,7 @@ export default function ResultsPage() {
             }}
           >
             <div>
-              <img src="/logos/trade_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none mb-4" />
+              <img src="/logos/trade_hub.png" alt="Trade Hub logo" className="h-6 md:h-7 w-auto max-w-none mb-4" />
               <p className="text-sm text-foreground/70 leading-relaxed">
                 Gold Signals — four live providers calling XAUUSD, every
                 session. Alpha Scalper, London Snipes, Swing Syndicate and
@@ -81,7 +81,7 @@ export default function ResultsPage() {
             }}
           >
             <div>
-              <img src="/logos/forex_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none mb-4" />
+              <img src="/logos/forex_hub.png" alt="Forex Hub logo" className="h-6 md:h-7 w-auto max-w-none mb-4" />
               <p className="text-sm text-foreground/70 leading-relaxed">
                 Forex Signals — Reversal Scout &amp; FX Samurai calling
                 majors and minors. RR-based, not pip-chasing, with risk
@@ -116,7 +116,7 @@ export default function ResultsPage() {
             }}
           >
             <div>
-              <img src="/logos/automated_hub.png" alt="" className="h-6 md:h-7 w-auto max-w-none self-start mb-4" />
+              <img src="/logos/automated_hub.png" alt="Automated Hub logo" className="h-6 md:h-7 w-auto max-w-none self-start mb-4" />
               <p className="text-sm text-foreground/70 leading-relaxed mb-3">
                 Gamma — a fully automated gold breakout algo, trading a real
                 account live since December 2024, tracked publicly and

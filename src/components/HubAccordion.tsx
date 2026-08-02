@@ -93,7 +93,7 @@ export default function HubAccordion() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
                     src={hub.logo}
-                    alt=""
+                    alt={`${hub.slug.replace(/-/g, " ")} logo`}
                     className="h-6 w-auto max-w-none opacity-80"
                     style={{ transform: "rotate(-90deg)" }}
                   />
@@ -102,7 +102,7 @@ export default function HubAccordion() {
 
               {isActive && (
                 <div className="h-full flex flex-col p-8 animate-[fadeIn_0.4s_ease]">
-                  <img src={hub.logo} alt="" className="h-9 w-auto max-w-none self-start mb-4" />
+                  <img src={hub.logo} alt={`${hub.slug.replace(/-/g, " ")} logo`} className="h-9 w-auto max-w-none self-start mb-4" />
                   <p className="text-sm text-gold-bright font-semibold mb-6">
                     {hub.tagline}
                   </p>
@@ -155,7 +155,7 @@ export default function HubAccordion() {
               }}
             >
               <div className="flex items-center justify-between px-4 py-3">
-                <img src={hub.logo} alt="" className="h-4 w-auto max-w-none" />
+                <img src={hub.logo} alt={`${hub.slug.replace(/-/g, " ")} logo`} className="h-4 w-auto max-w-none" />
                 <span className="text-gold-bright text-lg">
                   {isActive ? "−" : "+"}
                 </span>

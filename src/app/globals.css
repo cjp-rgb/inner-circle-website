@@ -26,3 +26,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-poppins), sans-serif;
 }
+
+/* Visible focus states for keyboard navigation — only shows for keyboard
+   users (:focus-visible), not mouse clicks, so it doesn't add visual noise
+   for pointer interaction while still meeting accessibility requirements. */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 3px;
+  border-radius: 4px;
+}

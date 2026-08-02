@@ -51,7 +51,7 @@ export default function Nav() {
         <button
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
-          className="md:hidden flex flex-col justify-center gap-[4px] w-7 h-7"
+          className="md:hidden flex flex-col justify-center items-center gap-[4px] w-11 h-11"
         >
           <span className="block h-px w-5 bg-gold-bright" />
           <span className="block h-px w-5 bg-gold-bright" />

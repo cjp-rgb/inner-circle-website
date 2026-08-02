@@ -38,7 +38,7 @@ export default function HubGrid() {
               <div className="h-5 md:h-8 flex items-center justify-center mb-2 md:mb-3">
                 <img
                   src={hub.logo}
-                  alt=""
+                  alt={`${hub.slug.replace(/-/g, " ")} logo`}
                   className="h-full w-auto max-w-none"
                 />
               </div>
