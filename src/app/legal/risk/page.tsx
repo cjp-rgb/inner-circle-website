@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
+
+export const metadata: Metadata = {
+  title: "Risk Disclaimer",
+  description: "Trading risk, our role as an Introducing Broker, and how commission works.",
+};
 
 export default function RiskDisclaimer() {
   return (

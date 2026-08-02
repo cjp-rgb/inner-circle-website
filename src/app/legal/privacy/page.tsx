@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "What information we collect, how we use it, and your rights.",
+};
 
 export default function PrivacyPolicy() {
   return (

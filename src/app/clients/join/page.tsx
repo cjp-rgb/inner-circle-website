@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "How to Join",
+  description:
+    "One message on Telegram is all it takes — our onboarding bot walks you through the rest.",
+};
 
 export default function JoinPage() {
   return (

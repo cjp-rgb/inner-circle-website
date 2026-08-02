@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "The terms that govern your use of The Inner Circle's services.",
+};
 
 export default function Terms() {
   return (

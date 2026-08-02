@@ -18,8 +18,12 @@ const poppins = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "The Inner Circle",
-  description: "One ecosystem. Every edge.",
+  title: {
+    default: "The Inner Circle | Signals, Automation & Education",
+    template: "%s | The Inner Circle",
+  },
+  description:
+    "One ecosystem, every edge — live signals, automated trading, structured education, and a real community, all in one place.",
 };
 
 export default function RootLayout({

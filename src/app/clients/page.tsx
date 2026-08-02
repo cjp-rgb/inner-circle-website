@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "For Clients",
+  description:
+    "Everything traders get inside The Inner Circle — the hubs, results, how to join, and answers to the questions people actually ask.",
+};
 
 const SECTIONS = [
   {

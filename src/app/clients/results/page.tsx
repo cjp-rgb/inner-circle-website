@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import AnimatedStat from "@/components/AnimatedStat";
+
+export const metadata: Metadata = {
+  title: "Results",
+  description:
+    "Real, verified results — live automated trading data and signal performance, shown honestly.",
+};
 
 export default function ResultsPage() {
   return (
