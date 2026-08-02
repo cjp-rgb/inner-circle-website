@@ -18,7 +18,7 @@ const poppins = localFont({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://inner-circle-website.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://theinnercircle.website";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
