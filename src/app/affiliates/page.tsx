@@ -20,7 +20,7 @@ export default function AffiliatesPage() {
         className="relative pt-16 md:pt-24 pb-16 md:pb-24"
         style={{
           background:
-            "radial-gradient(ellipse 1000px 750px at 50% 15%, rgba(120,130,145,0.22) 0%, rgba(20,20,22,0.9) 45%, rgba(0,0,0,1) 78%), linear-gradient(180deg, #050505 0%, #000000 100%)",
+            "radial-gradient(ellipse 1000px 750px at 50% 15%, rgba(120,130,145,0.22) 0%, rgba(20,20,22,0.9) 45%, rgba(0,0,0,1) 78%), linear-gradient(180deg, #050402 0%, #000000 100%)",
         }}
       >
         <div className="max-w-3xl mx-auto text-center px-5 mb-16 md:mb-24">

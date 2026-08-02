@@ -56,14 +56,14 @@ export default function AudienceFork() {
             <span className="text-[9px] md:text-xs tracking-[1.5px] md:tracking-[2px] text-[#C8D2DB] uppercase font-semibold mb-1.5 md:mb-3">
               For Partners
             </span>
-            <h3 className="text-sm md:text-2xl font-bold text-[#E4E9ED] mb-1.5 md:mb-3">
+            <h3 className="text-sm md:text-2xl font-bold text-[#E8EDF2] mb-1.5 md:mb-3">
               I&apos;m an Affiliate
             </h3>
             <p className="text-[10px] md:text-sm text-foreground/75 leading-relaxed mb-3 md:mb-6">
               Introduce clients, earn on every trade they place, and get the
               tools built specifically to help you grow your own network.
             </p>
-            <span className="mt-auto text-[10px] md:text-sm font-semibold text-[#E4E9ED] group-hover:underline">
+            <span className="mt-auto text-[10px] md:text-sm font-semibold text-[#E8EDF2] group-hover:underline">
               See Your Earning Potential →
             </span>
           </a>
