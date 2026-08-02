@@ -54,12 +54,13 @@ export default function AffiliatesPage() {
             </h2>
             <p className="text-sm text-foreground/65 max-w-2xl mx-auto leading-relaxed">
               AOS is a full web app, built entirely in-house — not a
-              spreadsheet, not a Notion doc. It pulls in your clients&apos;
-              rebates and deposits automatically, writes and schedules your
-              social content for you, and shows you exactly where your
-              growth is coming from. The point isn&apos;t just tracking
-              numbers — it&apos;s removing the busywork so the actual job
-              (growing your network) is the only thing left to do.
+              spreadsheet, not a Notion doc. Client rebates and deposits
+              update from a simple weekly import, your social content gets
+              written and scheduled for you, and you can see exactly where
+              your growth is coming from at a glance. The point isn&apos;t
+              just tracking numbers — it&apos;s removing the busywork so the
+              actual job (growing your network) is the only thing left to
+              do.
             </p>
           </div>
 

@@ -18,7 +18,7 @@ const AOS_TABS = [
 
 const AOS_TAB_INTRO: Record<string, string> = {
   dashboard: "Your whole operation at a glance — net deposits, active clients, and who needs attention this week.",
-  clients: "Every client you've referred, in one place — lots traded, rebate earned, and net deposits, updated automatically.",
+  clients: "Every client you've referred, in one place — lots traded, rebate earned, and net deposits, updated with a simple weekly import.",
   analytics: "Real performance data — volume trends, conversion rates, and where your funnel actually leaks.",
   goals: "Set real targets and watch your progress toward them, with a running projection of when you'll hit each one.",
   calendar: "Six post types, scheduled and sent for you — you don't have to remember to post, ever.",
