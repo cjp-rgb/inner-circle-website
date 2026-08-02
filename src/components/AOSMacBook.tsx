@@ -16,6 +16,17 @@ const AOS_TABS = [
   { key: "network", label: "Network" },
 ];
 
+const AOS_TAB_INTRO: Record<string, string> = {
+  dashboard: "Your whole operation at a glance — net deposits, active clients, and who needs attention this week.",
+  clients: "Every client you've referred, in one place — lots traded, rebate earned, and net deposits, updated automatically.",
+  analytics: "Real performance data — volume trends, conversion rates, and where your funnel actually leaks.",
+  goals: "Set real targets and watch your progress toward them, with a running projection of when you'll hit each one.",
+  calendar: "Six post types, scheduled and sent for you — you don't have to remember to post, ever.",
+  socialai: "AI-written captions in your voice, six tone rotations, ready to forward the moment a client sends a profit shot.",
+  playbook: "The full 9-phase scaling system — from compliance basics through to a complete website funnel.",
+  network: "Your downline at a glance — who's in it, how it's growing, and where the momentum is.",
+};
+
 function AOSScreen({ tabKey }: { tabKey: string }) {
   if (tabKey === "dashboard") {
     return (
@@ -24,7 +35,7 @@ function AOSScreen({ tabKey }: { tabKey: string }) {
         <div className="grid grid-cols-3 gap-3 mb-4">
           {["Net Deposits", "Active Clients", "This Week"].map((label, i) => (
             <div key={label} className="rounded-lg p-3 count-up" style={{ ...CARD, animationDelay: `${i * 0.1}s` }}>
-              <p className="text-lg font-bold text-gold-bright">{["£412k", "40", "6"][i]}</p>
+              <p className="text-lg font-bold text-gold-bright">{["$68.4k", "22", "$410"][i]}</p>
               <p className="text-[8px] text-muted uppercase tracking-wide mt-0.5">{label}</p>
               <p className="text-[7px] mt-0.5" style={{ color: "#5FD98A" }}>▲ +12%</p>
             </div>
@@ -34,7 +45,7 @@ function AOSScreen({ tabKey }: { tabKey: string }) {
         {["A. Reeves", "M. Kowalski", "S. Ibrahim"].map((c, i) => (
           <div key={c} className="flex items-center justify-between rounded-lg px-3 py-1.5 mb-1 slide-in" style={{ ...CARD, animationDelay: `${i * 0.08}s` }}>
             <span className="text-[8px] text-foreground/70">{c}</span>
-            <span className="text-[8px] font-semibold text-gold-bright">£{[84, 61, 47][i]}k</span>
+            <span className="text-[8px] font-semibold text-gold-bright">${["8.2k", "5.4k", "3.1k"][i]}</span>
           </div>
         ))}
       </div>
@@ -52,10 +63,10 @@ function AOSScreen({ tabKey }: { tabKey: string }) {
           <span className="w-16 text-right">Net Dep</span>
         </div>
         {[
-          { n: "A. Reeves", l: "142", r: "£710", d: "£84k" },
-          { n: "M. Kowalski", l: "98", r: "£490", d: "£61k" },
-          { n: "S. Ibrahim", l: "76", r: "£380", d: "£47k" },
-          { n: "J. Novak", l: "54", r: "£270", d: "£31k" },
+          { n: "A. Reeves", l: "45", r: "$675", d: "$8.2k" },
+          { n: "M. Kowalski", l: "32", r: "$480", d: "$5.4k" },
+          { n: "S. Ibrahim", l: "24", r: "$360", d: "$3.1k" },
+          { n: "J. Novak", l: "16", r: "$240", d: "$1.8k" },
         ].map((c, i) => (
           <div key={c.n} className="flex items-center rounded-lg px-3 py-2 mb-1 slide-in" style={{ ...CARD, animationDelay: `${i * 0.08}s` }}>
             <span className="flex-1 text-[8px] text-foreground/80">{c.n}</span>
@@ -286,4 +297,4 @@ export default function AOSMacBook({ activeTab }: { activeTab: string }) {
   );
 }
 
-export { AOS_TABS };
+export { AOS_TABS, AOS_TAB_INTRO };

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Footer from "@/components/Footer";
-import AOSMacBook, { AOS_TABS } from "@/components/AOSMacBook";
+import AOSMacBook, { AOS_TABS, AOS_TAB_INTRO } from "@/components/AOSMacBook";
 
 const CARD_STYLE = {
   background: "linear-gradient(155deg, rgba(200,210,219,0.08) 0%, rgba(200,210,219,0.02) 55%, rgba(255,255,255,0.015) 100%)",
@@ -49,14 +49,29 @@ export default function AffiliatesPage() {
             <p className="text-[10px] md:text-xs tracking-[2.5px] uppercase font-bold text-[#C8D2DB] mb-2">
               The Affiliate Operating System
             </p>
-            <h2 className="text-xl md:text-3xl font-bold shimmer-text">
+            <h2 className="text-xl md:text-3xl font-bold shimmer-text mb-4">
               Built To Run Your Growth For You
             </h2>
+            <p className="text-sm text-foreground/65 max-w-2xl mx-auto leading-relaxed">
+              AOS is a full web app, built entirely in-house — not a
+              spreadsheet, not a Notion doc. It pulls in your clients&apos;
+              rebates and deposits automatically, writes and schedules your
+              social content for you, and shows you exactly where your
+              growth is coming from. The point isn&apos;t just tracking
+              numbers — it&apos;s removing the busywork so the actual job
+              (growing your network) is the only thing left to do.
+            </p>
           </div>
 
           <AOSMacBook activeTab={aosTab} />
 
-          <div className="flex justify-center flex-wrap gap-2 mt-8">
+          <div className="text-center mt-6 max-w-lg mx-auto">
+            <p key={aosTab} className="text-xs md:text-sm text-foreground/60 animate-[introFade_0.3s_ease]">
+              {AOS_TAB_INTRO[aosTab]}
+            </p>
+          </div>
+
+          <div className="flex justify-center flex-wrap gap-2 mt-6">
             {AOS_TABS.map((t) => (
               <button
                 key={t.key}
@@ -163,6 +178,10 @@ export default function AffiliatesPage() {
         }
         @keyframes shimmerMove {
           to { background-position: -250% center; }
+        }
+        @keyframes introFade {
+          from { opacity: 0; transform: translateY(4px); }
+          to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
     </main>
