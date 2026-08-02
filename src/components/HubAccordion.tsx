@@ -6,7 +6,7 @@ export const HUBS = [
   {
     slug: "trade-hub",
     logo: "/logos/trade_hub.png",
-    phone: "/phones/trade_hub_phone_crop.png",
+    phone: "/phones/trade_hub_phone_crop.webp",
     tagline: "Four live signal providers, every session covered.",
     detail:
       "Alpha Scalper, London Snipes, Swing Syndicate & High RR — four dedicated providers calling gold and FX around the clock. This is where The Inner Circle's edge begins: live entries, live management, live results, all inside one feed.",
@@ -14,7 +14,7 @@ export const HUBS = [
   {
     slug: "vip-hub",
     logo: "/logos/vip_hub.png",
-    phone: "/phones/vip_hub_phone_crop.png",
+    phone: "/phones/vip_hub_phone_crop.webp",
     tagline: "Wins, progress, and direct access to the team.",
     detail:
       "A real community room — general chat, wins & progress, direct announcements from the team, and the standards that keep it worth being in.",
@@ -22,7 +22,7 @@ export const HUBS = [
   {
     slug: "automated-hub",
     logo: "/logos/automated_hub.png",
-    phone: "/phones/automated_hub_phone_crop.png",
+    phone: "/phones/automated_hub_phone_crop.webp",
     tagline: "Gamma — a fully automated gold breakout algo.",
     detail:
       "Link your MT4/5 account and let Gamma work. A hands-off, fully automated approach to trading gold, with a verified track record kept transparent from day one.",
@@ -30,7 +30,7 @@ export const HUBS = [
   {
     slug: "forex-hub",
     logo: "/logos/forex_hub.png",
-    phone: "/phones/forex_hub_phone_crop.png",
+    phone: "/phones/forex_hub_phone_crop.webp",
     tagline: "RR-based calls, not pip-chasing.",
     detail:
       "Two dedicated FX traders — Reversal Scout & FX Samurai — calling majors and minors in risk-to-reward, not pips. Risk management comes first, every single time.",
@@ -38,7 +38,7 @@ export const HUBS = [
   {
     slug: "education-hub",
     logo: "/logos/education_hub.png",
-    phone: "/phones/education_hub_phone_crop.png",
+    phone: "/phones/education_hub_phone_crop.webp",
     tagline: "Foundations to advanced SMC.",
     detail:
       "Platform setup, market basics, trader psychology, and a full path through Smart Money Concepts — structured lessons, not a random folder of videos. Copy Trading & Signals runs as its own parallel track for those who'd rather follow than learn SMC first.",
@@ -46,7 +46,7 @@ export const HUBS = [
   {
     slug: "trader-console",
     logo: "/logos/trader_console.png",
-    phone: "/phones/trader_console_phone_crop.png",
+    phone: "/phones/trader_console_phone_crop.webp",
     tagline: "Your trading command center.",
     detail:
       "Live gold sentiment, trend alignment across every timeframe, red-folder news alerts, and one-tap access to every signal room and the Gamma algo — all in one app.",

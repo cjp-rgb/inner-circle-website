@@ -3,12 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 
 const PHONES = [
-  { src: "/phones/trade_hub_phone_crop.png", label: "Trade Hub", slug: "trade-hub" },
-  { src: "/phones/vip_hub_phone_crop.png", label: "VIP Hub", slug: "vip-hub" },
-  { src: "/phones/automated_hub_phone_crop.png", label: "Automated Hub", slug: "automated-hub" },
-  { src: "/phones/forex_hub_phone_crop.png", label: "Forex Hub", slug: "forex-hub" },
-  { src: "/phones/education_hub_phone_crop.png", label: "Education Hub", slug: "education-hub" },
-  { src: "/phones/trader_console_phone_crop.png", label: "Trader Console", slug: "trader-console" },
+  { src: "/phones/trade_hub_phone_crop.webp", label: "Trade Hub", slug: "trade-hub" },
+  { src: "/phones/vip_hub_phone_crop.webp", label: "VIP Hub", slug: "vip-hub" },
+  { src: "/phones/automated_hub_phone_crop.webp", label: "Automated Hub", slug: "automated-hub" },
+  { src: "/phones/forex_hub_phone_crop.webp", label: "Forex Hub", slug: "forex-hub" },
+  { src: "/phones/education_hub_phone_crop.webp", label: "Education Hub", slug: "education-hub" },
+  { src: "/phones/trader_console_phone_crop.webp", label: "Trader Console", slug: "trader-console" },
 ];
 
 function useViewportSize() {
