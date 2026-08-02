@@ -40,6 +40,7 @@ export default function ConsoleSpotlight() {
   const tab = TABS[active];
 
   useEffect(() => {
+    let lastProgress = Infinity;
     const handleScroll = () => {
       if (rafRef.current !== null) return;
       rafRef.current = requestAnimationFrame(() => {
@@ -51,6 +52,8 @@ export default function ConsoleSpotlight() {
         const vh = window.innerHeight;
         const center = rect.top + rect.height / 2;
         const progress = Math.max(-1, Math.min(1, (vh / 2 - center) / (vh / 2)));
+        if (Math.abs(progress - lastProgress) < 0.001) return;
+        lastProgress = progress;
         el.style.transform = `perspective(900px) rotateY(${progress * 14}deg)`;
       });
     };
@@ -92,44 +95,46 @@ export default function ConsoleSpotlight() {
           </p>
         </div>
 
-        <div className="flex justify-center md:justify-start gap-2 mb-8 md:mb-12">
-          {TABS.map((t, i) => (
-            <button
-              key={t.key}
-              onClick={() => setActive(i)}
-              className="text-xs md:text-sm font-semibold tracking-wide rounded-full px-4 py-2 md:px-6 md:py-2.5 transition-all"
-              style={{
-                color: active === i ? "#0A0A0A" : "#F0D687",
-                background:
-                  active === i
-                    ? "linear-gradient(155deg,#F0D687,#C9A84C)"
-                    : "rgba(255,255,255,0.06)",
-                border:
-                  active === i
-                    ? "1px solid transparent"
-                    : "1px solid rgba(255,255,255,0.16)",
-              }}
-            >
-              {t.label}
-            </button>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="relative flex items-center justify-center h-[420px] md:h-[500px]">
-            <div
-              className="absolute rounded-full pointer-events-none"
-              style={{
-                width: "340px",
-                height: "300px",
-                background:
-                  "radial-gradient(ellipse, rgba(240,214,135,0.4) 0%, rgba(212,175,55,0.16) 45%, rgba(0,0,0,0) 75%)",
-              }}
-            />
-            <div key={tab.key} className="relative animate-[consoleFade_0.4s_ease]">
-              <div ref={tiltRef} className="will-change-transform" style={{ transformStyle: "preserve-3d" }}>
-                <PhoneFrame tabKey={tab.key} width={220} height={460} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+          <div className="flex flex-col items-center">
+            <div className="relative flex items-center justify-center h-[420px] md:h-[500px]">
+              <div
+                className="absolute rounded-full pointer-events-none"
+                style={{
+                  width: "340px",
+                  height: "300px",
+                  background:
+                    "radial-gradient(ellipse, rgba(240,214,135,0.4) 0%, rgba(212,175,55,0.16) 45%, rgba(0,0,0,0) 75%)",
+                }}
+              />
+              <div key={tab.key} className="relative animate-[consoleFade_0.4s_ease]">
+                <div ref={tiltRef} className="will-change-transform" style={{ transformStyle: "preserve-3d" }}>
+                  <PhoneFrame tabKey={tab.key} width={220} height={460} />
+                </div>
               </div>
+            </div>
+
+            <div className="flex justify-center gap-2 -mt-4">
+              {TABS.map((t, i) => (
+                <button
+                  key={t.key}
+                  onClick={() => setActive(i)}
+                  className="text-xs md:text-sm font-semibold tracking-wide rounded-full px-4 py-2 md:px-6 md:py-2.5 transition-all"
+                  style={{
+                    color: active === i ? "#0A0A0A" : "#F0D687",
+                    background:
+                      active === i
+                        ? "linear-gradient(155deg,#F0D687,#C9A84C)"
+                        : "rgba(255,255,255,0.06)",
+                    border:
+                      active === i
+                        ? "1px solid transparent"
+                        : "1px solid rgba(255,255,255,0.16)",
+                  }}
+                >
+                  {t.label}
+                </button>
+              ))}
             </div>
           </div>
 

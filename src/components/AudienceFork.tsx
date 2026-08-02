@@ -13,8 +13,7 @@ export default function AudienceFork() {
 
         <div className="grid grid-cols-2 gap-3 md:gap-6">
           {/* Clients */}
-          <a
-            href="/clients"
+          <div
             className="group relative rounded-xl md:rounded-2xl p-4 md:p-10 flex flex-col items-start transition-transform hover:-translate-y-1"
             style={{
               background:
@@ -35,10 +34,22 @@ export default function AudienceFork() {
               Signals, automation, education, and a community built around
               actually trading better — see what&apos;s inside and how to join.
             </p>
-            <span className="mt-auto text-[10px] md:text-sm font-semibold text-gold-bright group-hover:underline">
-              See What's Inside →
-            </span>
-          </a>
+            <div className="mt-auto flex items-center gap-4 flex-wrap">
+              <a
+                href="/clients"
+                className="text-[10px] md:text-sm font-semibold text-gold-bright hover:underline"
+              >
+                See What's Inside →
+              </a>
+              <a
+                href="/clients/join"
+                className="text-[10px] md:text-sm font-semibold rounded-full px-3 py-1.5 md:px-4 md:py-2"
+                style={{ color: "#0A0A0A", background: "linear-gradient(155deg,#F0D687,#C9A84C)" }}
+              >
+                How to Join
+              </a>
+            </div>
+          </div>
 
           {/* Affiliates */}
           <a

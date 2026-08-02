@@ -55,7 +55,7 @@ export default function AffiliatesPage() {
         <div className="max-w-4xl mx-auto px-5 mb-20 md:mb-28">
           <div className="text-center mb-8 md:mb-10">
             <p className="text-[10px] md:text-xs tracking-[2.5px] uppercase font-bold text-[#C8D2DB] mb-2">
-              The Affiliate Operating System
+              The Inner Circle AOS
             </p>
             <h2 className="text-xl md:text-3xl font-bold shimmer-text mb-4">
               Built To Run Your Growth For You

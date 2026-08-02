@@ -96,7 +96,13 @@ export default function Hero() {
         const scrollDistance = section.offsetHeight - window.innerHeight;
         const scrolled = Math.min(Math.max(-rect.top, 0), scrollDistance);
         const progress = scrollDistance > 0 ? scrolled / scrollDistance : 0;
-        applyTransforms(progress * (PHONES.length - 1));
+        const nextFloat = progress * (PHONES.length - 1);
+        // Skip DOM writes entirely if the value hasn't meaningfully changed
+        // (e.g. scrolled fully past the hero and settled at the end state) —
+        // otherwise this keeps writing styles to 6 elements on every scroll
+        // frame site-wide for zero visual change.
+        if (Math.abs(nextFloat - activeFloatRef.current) < 0.001) return;
+        applyTransforms(nextFloat);
       });
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
