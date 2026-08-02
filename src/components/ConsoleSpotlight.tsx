@@ -97,7 +97,7 @@ export default function ConsoleSpotlight() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
           <div className="flex flex-col items-center">
-            <div className="relative flex items-center justify-center h-[420px] md:h-[500px]">
+            <div className="relative flex items-center justify-center py-4">
               <div
                 className="absolute rounded-full pointer-events-none"
                 style={{
@@ -114,7 +114,7 @@ export default function ConsoleSpotlight() {
               </div>
             </div>
 
-            <div className="flex justify-center gap-2 -mt-4">
+            <div className="flex justify-center gap-2 mt-4">
               {TABS.map((t, i) => (
                 <button
                   key={t.key}
